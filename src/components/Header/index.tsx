@@ -1,11 +1,12 @@
 import { SignInButton } from '../SignInButton'
 import styles from './styles.module.scss'
+import Image from "next/image";
 
-export function Header() {
+export function Header1() {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
-                <img src="/images/logo.svg" alt="my.news"/>
+                <Image src="/images/logo.svg" alt="my.news" width="120px" height="120px"/>
                 <nav>
                     <a className={styles.active}>Home</a>
                     <a>Posts</a>
